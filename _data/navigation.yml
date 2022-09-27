@@ -1,0 +1,10 @@
+main:
+  - title: "Download"
+    url: /download
+  - title: "Documentation"
+    url: /documentation
+  - title: "Community"
+    url: /community
+  - title: "Contribute"
+    url: /contribute
+
