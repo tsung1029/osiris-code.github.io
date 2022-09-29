@@ -8,3 +8,54 @@ main:
   - title: "Contribute"
     url: /contribute
 
+docs:
+  - title: "Documentation"
+    url: /documentation
+    children:
+      - title: "Introduction to PIC modeling"
+        url: /documentation#intro
+      - title: "User guides"
+        url: /documentation#user_guides
+      - title: "Reference guide"
+        url: /documentation#referenfce_guide
+
+  - title: "Compile the code"
+    url: /documentation/compile
+    children:
+      - title: "Introduction"
+        url: /documentation/compile#intro
+      - title: "Pre-requisites"
+        url: /documentation/compile#intro
+      - title: "Configuring"
+        url: /documentation/compile#intro
+      - title: "System configuration files"
+        url: /documentation/compile#intro
+      - title: "Advanced options"
+        url: /documentation/compile#intro
+      - title: "Compile the code"
+        url: /documentation/compile#intro
+
+  - title: "Run the code"
+    url: /documentation/run
+    children:
+      - title: "Launching a simulation"
+        url: /documentation/run#intro
+      - title: "OSIRIS command line options"
+        url: /documentation/run#intro
+      - title: "Environment variables"
+        url: /documentation/run#intro
+      - title: "Parallel simulations"
+        url: /documentation/run#intro
+
+  - title: "Units and normalization"
+    url: /documentation/units
+    children:
+      - title: "Code Units and Normalization"
+        url: /documentation/units#intro
+      - title: "Simulation units"
+        url: /documentation/units#intro
+      - title: "Laboratory units"
+        url: /documentation/units#intro
+      - title: "Normalizing to antoher frequency"
+        url: /documentation/units#intro
+
