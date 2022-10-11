@@ -2,7 +2,6 @@
 layout: single
 title: Running OSIRIS
 permalink: /documentation/run
-
 toc: true
 toc_label: Running OSIRIS
 
@@ -12,7 +11,7 @@ sidebar:
 
 ## Launching a simulation
 
-OSIRIS simulations are set up using an input file (also referred to as input deck throughout the documentation) with a specific format described [here](missing). Assuming you have an OSIRIS binary named `osiris` and an input file named `input_file` in the currend directory, you can launch a (serial) OSIRIS simulation by doing:
+OSIRIS simulations are set up using an input file (also referred to as an input deck throughout the documentation) with a specific format described [here](missing). Assuming you have an OSIRIS binary named `osiris` and an input file named `input_file` in the current directory, you can launch a (serial) OSIRIS simulation by doing:
 
 ```bash
 $ ./osiris input_file
@@ -38,8 +37,7 @@ $ osiris [-t] [-r] [-w work_dir] [input_file]
 
 ## Environment variables
 
-Alternatively you can use the following environment variables to control
-Osiris behavior:
+Alternatively, you can use the following environment variables to control OSIRIS behavior:
 
 * `OSIRIS_TEST` - Setting this to any value is the same as setting the `-t` option above.
 * `OSIRIS_RESTART` - Setting this to any value is the same as setting the `-r` option above.
@@ -49,7 +47,7 @@ The environment variables override the command line options.
 
 ## Parallel (MPI/OpenMP) simulations
 
-Launching a parallel (MPI) OSIRIS simulation depends on the specific MPI library and/or queing system used. For example, if your system supports `mpiexec` then OSIRIS can be launched as any other MPI job, e.g.:
+Launching a parallel (MPI) OSIRIS simulation depends on the specific MPI library and/or queuing system used. For example, if your system supports `mpiexec` then OSIRIS can be launched as any other MPI job, e.g.:
 
 ```bash
 $ mpiexec -np nnodes ./osiris input_file
@@ -57,4 +55,4 @@ $ mpiexec -np nnodes ./osiris input_file
 
 Where `nnodes` is the number of MPI nodes to be used, which must match the values specified in the `node_conf` section of the input file. If the binary was compiled with OpenMP support and its use was configured in the same `node_conf` section of the input file, then it will be used automatically, and no other command line options need to be specified.
 
-For larger HPC systems that use queueing/batch systems you should check their documentation on how to launch MPI or MPI/OpenMP hybrid parallel jobs. Again, OSIRIS can be launched like any other MPI or MPI/OpenMP job.
+For larger HPC systems that use queueing/batch systems, you should check their documentation on how to launch MPI or MPI/OpenMP hybrid parallel jobs. Again, OSIRIS can be launched like any other MPI or MPI/OpenMP job.

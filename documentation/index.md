@@ -10,17 +10,24 @@ sidebar:
   nav: "docs"
 ---
 
-## Brief introduction to PIC modelling
+## Compiling and Launching OSIRIS
 
-Coming soon!
+* [Quickstart](/documentation/quickstart) - Get OSIRIS running on your system in 3 simple steps.
+* [Pre-requisites](/documentation/pre_requisites) - Tools and libraries required for running OSIRIS.
+* [Compile OSIRIS](/documentation/compile) - Instructions on how to configure and compile the code.
+* [Launch OSIRIS](/documentation/run) - Running OSIRIS simulations, including instructions for parallel systems
 
-## User guides
+## Setting up your simulation
 
-* [Compiling OSIRIS](compile)
-* [Running OSIRIS](run)
-* [Units and normalization](units)
+* [Units and normalization](/documentation/units) - Normalization options for OSIRIS simulations.
+* [Input files](/documentation/input_file) - Syntax and general structure of OSIRIS input files
+* [Main simulation parameters](/documentation/parameters) - Main simulation parameters for OSIRIS simulations.
+* [Boundary conditions](/documentation/boundary) - Defining the boundary conditions for OSIRIS simulations.
+* [Laser pulses](/documentation/laser_pulses) - Adding laser pulses to the simulation.
+* [Diagnostics](/documentation/diagnostics) - Choosing diagnostic output for your simulation.
+* [Checkpointing](/documentation/checkpointing) - Instructions on how to write checkpoint data and resume a simulation.
+* [Examples](/documentation/examples) - Annotated examples of OSIRIS input files.
 
 ## Reference guide
 
-* Input file format
-* Input file examples
+* [Reference guide](/osiris/docs) - OSIRIS reference guide.

@@ -20,23 +20,6 @@ Compilation of OSIRIS on any system is done in 2 steps:
 
 Almost all OSIRIS options can be selected in the input file (referred to as runtime options), so usually you will only have to compile the code once. Options that are only available when compiling the code (compile time options) are for example the dimensionality of the code (1D/2D/3D) and numerical precision (single/double).
 
-## Pre-requisites
-
-To compile OSIRIS the following must be available in the target system:
-
-### Compilers/Tools:
-
-- A Fortran 2003 compiler, `gfortran` works great. OpenMP support is optional (but recommended).
-- A C compiler (`gcc` works great as well)
-- `gcc` - This is used as a preprocessor for the fortran code
-- A gnu compatible Make (AIX make is not compatible, but `gmake` is usually available)
-
-### Libraries:
-
-- MPI - Any recent implementation should do: [MPICH2](http://www.mcs.anl.gov/research/projects/mpich2/), [Open MPI](http://www.open-mpi.org) and [MVAPICH](http://mvapich.cse.ohio-state.edu) are known to work. If the implementations doesn't support `MPI_IN_PLACE` operations these can be disabled in source/os-config.h. MPE can also be used for logging and profiling if available.
-- [HDF5](http://www.hdfgroup.org/HDF5/) - Versions >= 1.10 are recommended, although older versions are known to work. Support for parallel I/O is optional.
-- [PAPI](http://icl.cs.utk.edu/papi/) (optional). PAPI can optionally be used for detailed code profiling. Only the C interface is required.
-- [SIONlib](http://www2.fz-juelich.de/jsc/sionlib) (optional) - SIONlib can be used to reduce the number of files used for writing restart information.
 
 ## Configuring compilation
 

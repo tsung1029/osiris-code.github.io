@@ -1,0 +1,38 @@
+---
+layout: single
+title: Pre-requisites
+permalink: /documentation/pre_requisites
+
+toc: true
+toc_label: Pre-requisites
+
+sidebar:
+  nav: "docs"
+---
+
+To get OSIRIS running on any system you will need a standard development toolchain including `gcc`, `make` and a recent Fortran 2003 compiler (`gfortran` works great). You will also need to have an MPI library installed (including Fortran bindings). See below for a detailed list of pre-requisites for building OSIRIS on your system.
+
+## Compilers/Tools
+
+* A recent Fortran 2003 compiler. OpenMP support is optional (but recommended).The following compilers are know to work:
+  * GNU `gfortran` (>= 6.0)
+  * Intel `ifort` (>= 2016)
+  * IBM XL Fortran `xlf2003` (>= 14.1)
+  * LLVM `flang` (>=14.0)
+* `gcc` - This is used as a preprocessor for the fortran code
+* A C compiler. Support for SIMD intrinsics is optional (but recommended). `gcc` works well, but a system specific compiler may yield better performance.
+* A gnu compatible `make` (AIX `make` is not compatible, but `gmake` is usually available)
+
+## Libraries
+
+### Required
+
+* __MPI__ - Any recent implementation should do: [MPICH2](http://www.mcs.anl.gov/research/projects/mpich2/), [Open MPI](http://www.open-mpi.org) and [MVAPICH](http://mvapich.cse.ohio-state.edu) are known to work. 
+
+_Note_: If the available MPI implementation doesn't support `MPI_IN_PLACE` operations these can be disabled in source/os-config.h. MPE can also be used for logging and profiling if available.
+
+### Optional
+
+* [HDF5](http://www.hdfgroup.org/HDF5/) - Versions >= 1.10 are recommended, although older versions are known to work. Support for parallel I/O is optional.
+* [PAPI](http://icl.cs.utk.edu/papi/) (optional). PAPI can optionally be used for detailed code profiling. Only the C interface is required.
+* [SIONlib](http://www2.fz-juelich.de/jsc/sionlib) (optional) - SIONlib can be used to reduce the number of files used for writing restart information.

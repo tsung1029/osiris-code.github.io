@@ -21,7 +21,7 @@ feature_row:
   - title: "Quickstart"
     excerpt: "OSIRIS can be run on many architectures, ranging from the most advanced HPC systems in the world to simple workstations
     and laptops with modest resrouces. It can easily be compiled from source or run from a Docker container."
-    url: "documentation"
+    url: "documentation/quickstart"
     btn_label: "Start using OSIRIS"
     btn_class: "btn--primary"
   - title: "Team"

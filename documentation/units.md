@@ -2,7 +2,6 @@
 layout: single
 title: OSIRIS units
 permalink: /documentation/units
-
 usemathjax: true
 toc: true
 toc_label: OSIRIS Units
@@ -13,8 +12,9 @@ sidebar:
 
 ## Code Units and Normalization
 
-OSIRIS simulations are done in normalized units. This has 2 distinct advantages: i) multiplication by several constants (like $m_e$, $e$ and $c$, for example) is avoided, resulting in a significant performance increase and ii) by expressing the simulation quantities in terms of the fundamental plasma quantities the results are general and not bound to some specific units we may choose. In our case we chose to normalize our quantities to $\omega_p$, $m_e$, $c$ and $e$, the electron plasma
-frequency, the electron rest mass, the speed of light and the electron charge, respectively.
+OSIRIS simulations are done in normalized units. This has 2 distinct advantages: i) multiplication by several constants (like $m_e$, $e$, and $c$, for example) is avoided, resulting in a significant performance increase and ii) by expressing the simulation quantities in terms of the fundamental plasma quantities the results are general and not bound to some specific units we may choose.
+
+In our case, we chose to normalize our quantities to $\omega_p$, $m_e$, $c$, and $e$, the electron plasma frequency, the electron rest mass, the speed of light, and the electron charge, respectively.
 
 ## Simulation Units
 
@@ -47,4 +47,4 @@ Also note that for high kinetic energies, $p \gg m_{sp} c$, the relativistic ene
 
 ## Normalizing to another frequency
 
-Alternatively, the user may chose another frequency such as the laser frequency, $\omega_0$ as the norm. In this case just replace $\omega_p$ with $\omega_0$ in the above formulae. A simulation plasma density of 1.0 will correspond to the critical density.
+Alternatively, the user may choose another frequency such as the laser frequency, $\omega_0$ as the norm. In this case, just replace $\omega_p$ with $\omega_0$ in the above formulae. A simulation plasma density of 1.0 will correspond to the critical density.

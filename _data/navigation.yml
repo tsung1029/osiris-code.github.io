@@ -9,53 +9,39 @@ main:
     url: /contribute
 
 docs:
-  - title: "Documentation"
-    url: /documentation
+  - title: "Compiling and launching"
     children:
-      - title: "Introduction to PIC modeling"
-        url: /documentation#intro
-      - title: "User guides"
-        url: /documentation#user_guides
-      - title: "Reference guide"
-        url: /documentation#referenfce_guide
-
-  - title: "Compile the code"
-    url: /documentation/compile
-    children:
-      - title: "Introduction"
-        url: /documentation/compile#intro
+      - title: "Quickstart"
+        url: /documentation/quickstart
       - title: "Pre-requisites"
-        url: /documentation/compile#intro
-      - title: "Configuring"
-        url: /documentation/compile#intro
-      - title: "System configuration files"
-        url: /documentation/compile#intro
-      - title: "Advanced options"
-        url: /documentation/compile#intro
-      - title: "Compile the code"
-        url: /documentation/compile#intro
-
-  - title: "Run the code"
-    url: /documentation/run
+        url: /documentation/pre_requisites
+      - title: "Compiling"
+        url: /documentation/compile
+      - title: "Launching"
+        url: /documentation/run
+    
+  - title: "Setting up your simulation"
     children:
-      - title: "Launching a simulation"
-        url: /documentation/run#intro
-      - title: "OSIRIS command line options"
-        url: /documentation/run#intro
-      - title: "Environment variables"
-        url: /documentation/run#intro
-      - title: "Parallel simulations"
-        url: /documentation/run#intro
+      - title: "Units and normalization"
+        url: /documentation/units
+      - title: "Input file structure"
+        url: /documentation/input_format
+      - title: "Main simulation parameters"
+        url: /documentation/parameters
+      - title: "Boundary conditions"
+        url: /documentation/boundary
+      - title: "Laser pulses"
+        url: /documentation/laser_pulses
+      - title: "Diagnostics"
+        url: /documentation/diagnostics
+      - title: "Checkpointing"
+        url: /documentation/checkpointing
+      - title: "Examples"
+        url: /documentation/examples
 
-  - title: "Units and normalization"
-    url: /documentation/units
+  - title: "Reference"
     children:
-      - title: "Code Units and Normalization"
-        url: /documentation/units#intro
-      - title: "Simulation units"
-        url: /documentation/units#intro
-      - title: "Laboratory units"
-        url: /documentation/units#intro
-      - title: "Normalizing to antoher frequency"
-        url: /documentation/units#intro
+      - title: "Reference guide"
+        url: /documentation/reference
+      
 
