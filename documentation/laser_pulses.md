@@ -48,7 +48,7 @@ zpulse {
 
 ### Injecting from a wall
 
-If instead, you want to gradually inject the laser pulse from a simulation wall you can use a `zpulse_wall` section to accomplish this. The laser pulse parameters are the same as those defined in the previous section, but the laser pulse duration is now set using the `tenv_*` parameters, and the code will be starting to inject the laser pulse at $t = 0$ (`launch_time` parameter.)
+If instead, you want to gradually inject the laser pulse from a simulation wall you can use a `zpulse_wall` section to accomplish this. The laser pulse parameters are the same as those defined in the previous section, except for the laser pulse duration parameters which are now set using the `tenv_*` parameters. Also, when injecting from a wall, the user can select at which time the code will be starting to inject the laser pulse, which in this example will be at $t = 0$ (`launch_time` parameter.)
 
 ```text
 zpulse_wall {

@@ -48,31 +48,72 @@ An OSIRIS input file is made out of all of the following sections, placed in the
 
 ### General Simulation Parameters
 
-* [node_conf](Node_Configuration.md) - node configuration, and periodic boundary settings
-* [grid](Grid.md) - grid and coordinate system
-* [time_step](Time_Step.md) - time step and dump frequency
-* [restart](Restart.md) - (optional) - restart settings
-* [space](Space.md) - spacial dimensions and moving window
-* [time](Time.md) - time limits
+* `node_conf{}` - node configuration, and periodic boundary settings
+* `grid{}` - grid and coordinate system
+* `time_step{}` - time step and dump frequency
+* `space{}` - spacial dimensions and moving window
+* `time{}` - time limits
 
 ### Electro-Magnetic Fields
 
-* [emf_bound](Electro-Magnetic_Field_Boundaries.md) - electro-magnetic field boundaries
+* `emf_bound{}` - electro-magnetic field boundaries
 
 ### Particles
 
-* [particles](Particles.md) - number of species in the simulation.
+* `particles{}` - number of species in the simulation.
 
 The following items are repeated for every species
 
-* [species](Species.md) - information on the particle species
-* [spe_bound](Species_Boundary.md) - boundary conditions for the species
+* `species{}` - information on the particle species
+* `spe_bound{}` - boundary conditions for the species
 
 ### Optional sections
 
 Additionally, users can add optional sections describing diagnostics, particle initialization options, laser pulses, and other simulation parameters. Please check the reference guide for a complete list of all OSIRIS input file sections.
 
-## Example
+## Minimal input file
+
+The following is an example of a minimal OSIRIS input file for a 2D simulation using periodic boundaries. It will run for 1 timestep with no particles or diagnostic output:
+
+```text
+node_conf {
+    ! defaults to serial run
+    
+    ! set periodic boundaries
+    if_periodic(1:2) = .true., .true.,
+}
+
+grid { 
+    ! grid size must be specified
+    nx_p(1:2) = 256, 256,   
+}
+
+time_step {
+    ! time-step must be specified
+    dt = 0.07,
+}
+
+space {
+    ! Spatial dimensions must be specified
+    xmin(1:2) = 0, 0,
+    xmax(1:2) = 25.6, 25.6,
+}
+
+time {
+    ! defaults to tmax = 0.0
+}
+
+emf_bound {
+    ! when not using periodic boundaries, user must specify
+    ! EM field boundaries in this section
+}
+
+particles {
+    ! defaults to no particle species
+}
+```
+
+## 2D simulation example
 
 The following is an annotated example of an OSIRIS input file setting up a simulation of an electron plasma cloud with a positron plasma cloud. This is a 2D simulation with the plasma clouds initially moving in the direction perpendicular to the simulation plane. This scenario is susceptible to Weibel instability and will lead to the development of a magnetic field structure. The simulation has a minimal set of diagnostics focusing only on the magnetic field and the electric current in the direction perpendicular to the simulation plane. The simulation is small enough to be run on a modern laptop; it is configured to use a total of 4 parallel nodes with 2 threads per node which should be adequate for a 4 core system (with hyperthreading).
 

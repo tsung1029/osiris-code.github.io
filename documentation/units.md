@@ -2,9 +2,9 @@
 layout: single
 title: OSIRIS units
 permalink: /documentation/units
-usemathjax: true
 toc: true
 toc_label: OSIRIS Units
+usemathjax: true
 
 sidebar:
   nav: "docs"

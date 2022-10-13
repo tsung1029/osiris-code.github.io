@@ -11,7 +11,7 @@ sidebar:
 
 ## Launching a simulation
 
-OSIRIS simulations are set up using an input file (also referred to as an input deck throughout the documentation) with a specific format described [here](missing). Assuming you have an OSIRIS binary named `osiris` and an input file named `input_file` in the current directory, you can launch a (serial) OSIRIS simulation by doing:
+OSIRIS simulations are set up using an input file (also referred to as an input deck throughout the documentation) with a specific format described [here](/documentation/input_format). Assuming you have an OSIRIS binary named `osiris` and an input file named `input_file` in the current directory, you can launch a (serial) OSIRIS simulation by doing:
 
 ```bash
 $ ./osiris input_file

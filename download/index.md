@@ -2,10 +2,8 @@
 layout: single
 title: Download
 permalink: /download/
-
 toc: true
 toc_label: Download OSIRIS
-
 ---
 
 ## Latest stable release

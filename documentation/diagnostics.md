@@ -14,6 +14,8 @@ The OSIRIS code includes a comprehensive set of simulation diagnostics, covering
 
 Output files are saved either using the HDF5 format or the ZDF format. In both cases, each file includes metadata describing the quantity, units, and time information for the particular file, allowing for easy post-processing of simulation data. All diagnostic files are saved in an `MS` directory below the OSIRIS run directory.
 
+For details on the format of the output files used, as well as instructions on how to open and process these files, please check the `output files` section of the reference guide.
+
 ## Global diagnostic frequency
 
 Most OSIRIS diagnostics are done at regular iteration intervals. These intervals are defined using two parameters: a global `ndump` parameter, set in the `time_step` section, and specific `ndump_fac` (or similar) parameters in each diagnostics section. The actual interval between each diagnostic output will be the product of these two values.

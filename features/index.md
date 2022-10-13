@@ -2,10 +2,10 @@
 layout: single
 title: Code Features
 permalink: /features/
-
 toc: true
 toc_label: Features
-
+sidebar:
+  nav: "short"
 ---
 
 ## State-of-the-art PIC code

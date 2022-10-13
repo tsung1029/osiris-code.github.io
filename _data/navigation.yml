@@ -8,13 +8,25 @@ main:
   - title: "Contribute"
     url: /contribute
 
+short:
+  - title: "Features"
+    children:
+      - title: "Code, algorithm, reduced models, initialization, diagnostics and other options"
+        url: /features
+  - title: "Quickstart"
+    children:
+      - title: "Start running OSIRIS in 3 simple steps"
+        url: /quickstart
+  - title: "Team"
+    children:
+      - title: "Meet the team behind OSIRIS"
+        url: /team
+
 docs:
   - title: "Compiling and launching"
     children:
-      - title: "Quickstart"
-        url: /documentation/quickstart
-      - title: "Pre-requisites"
-        url: /documentation/pre_requisites
+      - title: "Prerequisites"
+        url: /documentation/prerequisites
       - title: "Compiling"
         url: /documentation/compile
       - title: "Launching"
@@ -28,6 +40,8 @@ docs:
         url: /documentation/input_format
       - title: "Main simulation parameters"
         url: /documentation/parameters
+      - title: "Particles"
+        url: /documentation/particles
       - title: "Boundary conditions"
         url: /documentation/boundary
       - title: "Laser pulses"

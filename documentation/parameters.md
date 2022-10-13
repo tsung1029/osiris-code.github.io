@@ -16,10 +16,10 @@ A minimal OSIRIS input file must specify the:
 
 * __Grid parameters__ - Number of points and spatial dimensions of the simulation domain
 * __Time parameters__ - Time-step and total simulation time
-* __Particle parameters__ - Number of particle species and individual species parameters
+* __Particle parameters__ - Number of particle species (and individual species parameters)
 * __Parallelization parameters__ - Parallel decomposition to use and/or number of threads per process
 
-For details on the overall syntax and structure of an OSIRIS input file, please check the `input file` section of the reference guide. All values are specified using normalized units, please check the [units and normalization](/documentation/units) section for details.
+For details on the overall syntax and structure of an OSIRIS input file, and in particular, the order in which these parameters should be set, please check the `input file` section of the reference guide. All values are specified using normalized units, please check the [units and normalization](/documentation/units) section for details.
 
 ## Grid
 
@@ -70,52 +70,6 @@ time {
 ```
 
 For more details please check the `time_step` and `time` sections of the reference guide.
-
-## Particles
-
-Simulation particles are organized in "species", meaning sets of charged particles that share the same charge over mass ratio. You can control the number of species in the simulation using the `particles` section, and the parameters for each species using `species` sections. Users may choose to use as many species as they like (including none).
-
-For example, to set up a simulation using a single electron particles species ($m/q = -1$ in simulation units) with $4 \times 4$ particles per cell, you would choose in your input file:
-
-```text
-particles {
-  num_species = 1,
-}
-
-species {
-  name = "electrons",     ! the name is optional
-  num_par_x(1:2) = 4, 4,
-  rqm = -1.0,             ! in normalized units
-}
-```
-
-### Species parameters
-
-Following each species section, the user may optionally define the initial thermal/fluid distribution (`udist` section), and initial density profile (`profile` section). Users must also include a `spe_bound` section defining the boundary conditions for the species.
-
-For example, to set up a reduced mass ratio ion species ($m/q = 100$), with initial fluid velocity 0.2 c along the y direction and temperature $10^-4$ in all directions, filling only the box for positions $x > 0$, you would choose in your input file:
-
-```text
-species
-{
-  name = "ions-up" ,
-  num_par_x(1:2) = 2, 2,
-  rqm=100.0,
-}
-
-udist
-{
-  ufl(1:3) =  0.0 , 0.2 , 0.0 ,
-  uth(1:3) =  0.0001 , 0.0001 , 0.0001 ,
-}
-
-profile {
-  profile_type = "math func",
-  math_func_expr = 'x1 > 0',
-}
-```
-
-For more details please check the `particles` and `species` sections of the reference guide.
 
 ## Parallelization
 

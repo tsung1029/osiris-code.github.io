@@ -2,7 +2,6 @@
 layout: single
 title: OSIRIS community
 permalink: /community/
-
 toc: true
 toc_label: OSIRIS community
 
@@ -12,14 +11,10 @@ The OSIRIS framework is a fully relativistic particle-in-cell code with widespre
 
 ## OSIRIS mailing list
 
-The best way to get you user and development questions answered is through our mailing list. It is also your opportunity to help, and collaborate with, other OSIRIS users worldwide. Please join our mailing list here:
+The best way to get your user and development questions answered is through our mailing list. It is also your opportunity to help, and collaborate with, other OSIRIS users worldwide. Please join our mailing list here:
 
 * OSIRIS mailing list (coming soon)
 
-## Discord/slack channels
-
-I don't even know what these are...
-
 ## OSIRIS consortium
 
-If you would like to get in touch with the OSIRIS consortium regarding joining the team or other global project related questions please use XXXXX. (Please, no user and development questions through this channel).
+If you would like to get in touch with the OSIRIS consortium regarding joining the team or other global project-related questions please use GitHub and open a [new issue](https://github.com/osiris-code/osiris-code.github.io/issues/new) with the "consortium" label. (Please, no user and development questions through this channel).
