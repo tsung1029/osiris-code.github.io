@@ -14,6 +14,7 @@ sidebar:
 * High-order particle interpolation (up to 4th order)
 * Advanced filtering schemes for currents and EM fields
 * Massively parallel using hybrid MPI / OpenMP parallelization
+* Demonstrated parallel scalability to over 2 million processes
 * Explicit CPU vectorization using SSE, AVX2, AVX512 (KNL), QPX, Neon
 * Explicit GPU support using CUDA
 

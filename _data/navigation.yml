@@ -17,10 +17,14 @@ short:
     children:
       - title: "Start running OSIRIS in 3 simple steps"
         url: /quickstart
-  - title: "Team"
+  - title: "Consortium"
     children:
-      - title: "Meet the team behind OSIRIS"
-        url: /team
+      - title: "OSIRIS consortium"
+        url: /consortium
+      - title: "Membership types"
+        url: /consortium/membership
+      - title: "Acknowledging OSIRIS"
+        url: /consortium/acknowledge
 
 docs:
   - title: "Compiling and launching"

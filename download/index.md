@@ -19,3 +19,7 @@ There are no older releases available at this time. The full list of releases wi
 ## GitHub repository
 
 The current snapshot of the source code is available on our [GitHub repository](https://github.com/osiris-code/osiris/). Be aware that the current snapshot might be unstable, and it is not recommended for production use.
+
+## Acknowledging
+
+If you use OSIRIS we kindly request that you acknowledge our work. For a detailed list of references, logos, and other material you can use to reference OSIRIS please check the [acknowledgment page](/consortium/acknowledge).
