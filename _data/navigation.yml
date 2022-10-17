@@ -60,6 +60,5 @@ docs:
   - title: "Reference"
     children:
       - title: "Reference guide"
-        url: /documentation/reference
       
 

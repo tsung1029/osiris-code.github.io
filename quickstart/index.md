@@ -17,7 +17,7 @@ For more details on the prerequisites for compiling and running OSIRIS check the
 
 ## 1. Download the source code
 
-You can download the latest version of OSIRIS [here](https://latest.tar.gz2). Alternatively, you can clone the OSIRIS repository using:
+You can download the latest version of OSIRIS _here_(coming soon). Alternatively, you can clone the OSIRIS repository using:
 
 ```bash
 $ git clone https://github.com/osiris-code/osiris.git

@@ -19,12 +19,12 @@ Membership of the OSIRIS Consortium is organized in three levels: __User__, __De
 ### Steering Committee
 
 * [Instituto Superior Técnico, Lisboa, Portugal](http://epp.tecnico.ulisboa.pt) (founder)
-* [UCLA, Los Angeles, California](https://plasmasim.physics.ucla.edu/) (founder)
+* [UCLA, Los Angeles, California](https://picksc.physics.ucla.edu) (founder)
 
 ### Developers
 
 * [Instituto Superior Técnico, Lisboa, Portugal](http://epp.tecnico.ulisboa.pt)
-* [UCLA, Los Angeles, California](https://plasmasim.physics.ucla.edu/)
+* [UCLA, Los Angeles, California](https://picksc.physics.ucla.edu)
 * University of Michigan
 * University of Rochester - Laboratory for Laser Energetics
 * Tsinghua University
@@ -33,18 +33,30 @@ Membership of the OSIRIS Consortium is organized in three levels: __User__, __De
 ### Users
 
 * [Instituto Superior Técnico, Lisboa, Portugal](http://epp.tecnico.ulisboa.pt)
-* [UCLA, Los Angeles, California](https://plasmasim.physics.ucla.edu/)
+* [UCLA, Los Angeles, California](https://picksc.physics.ucla.edu)
 * University of Michigan
 * University of Rochester - Laboratory for Laser Energetics
 * Tsinghua University
 * Peking University
+* Oslo University
+* University of Strathclyde
+* Deutsches Elektronen-Synchrotron DESY
+* Max Plank Institute for Physics
+* Max Planck Institute for Quantum Optics
+* Politécnico di Torino
+* Rutherford Appleton Laboratory
+* Ben-Gurion University
+* CEA France
+* University of Salamanca
+* ELI Beamlines
+* Oxford University
+* University of Santiago de Compostela
+* Chalmers University of Technology
+* Lancaster University
+* University of Manchester
 
 ## Join the OSIRIS Consortium
 
 New members are welcome to join the OSIRIS Consortium. Prospective members are required to sign a memorandum of understanding (MOU) which sets forth the rights, privileges, and responsibilities for each level of membership within the Consortium.
 
-Links to the MOUs for each membership level can be found below:
-
-* OSIRIS User
-* OSIRIS Developer
-* OSIRIS Steering Committee
+Links to the MOUs for each membership level will be made available shortly.

@@ -26,12 +26,12 @@ To get OSIRIS running on any system you will need a standard development toolcha
 
 ### Required
 
-* __MPI__ - Any recent implementation should do: [MPICH2](http://www.mcs.anl.gov/research/projects/mpich2/), [Open MPI](http://www.open-mpi.org), and [MVAPICH](http://mvapich.cse.ohio-state.edu) are known to work.
+* __MPI__ - Any recent implementation should do: [MPICH](https://www.mpich.org), [Open MPI](https://www.open-mpi.org), and [MVAPICH](http://mvapich.cse.ohio-state.edu) are known to work.
 
 _Note_: If the available MPI implementation doesn't support `MPI_IN_PLACE` operations these can be disabled in source/os-config.h. MPE can also be used for logging and profiling if available.
 
 ### Optional
 
-* [HDF5](http://www.hdfgroup.org/HDF5/) - Versions >= 1.10 are recommended, although older versions are known to work. Support for parallel I/O is optional.
-* [PAPI](http://icl.cs.utk.edu/papi/) - PAPI can be used for detailed code profiling. Only the C interface is required.
-* [SIONlib](http://www2.fz-juelich.de/jsc/sionlib) - SIONlib can be used to reduce the number of files used for writing restart information.
+* [HDF5](https://www.hdfgroup.org/solutions/hdf5/) - Versions >= 1.10 are recommended, although older versions are known to work. Support for parallel I/O is optional.
+* [PAPI](https://icl.utk.edu/papi/) - PAPI can be used for detailed code profiling. Only the C interface is required.
+* [SIONlib](https://apps.fz-juelich.de/jsc/sionlib/docu/index.html) - SIONlib can be used to reduce the number of files used for writing restart information.

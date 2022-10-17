@@ -26,4 +26,4 @@ We are always looking for new ideas! Before you start writing code you should re
 
 ## Code contributions
 
-All contributions are submitted as pull requests on our [development GitHub repository](https://github.com/golp-ist/osiris/). To be able to contribute to the code you need to [join the OSIRIS project](/team). This will give access to the development repository and the OSIRIS developer community.
+All contributions are submitted as pull requests on our development GitHub repository (GoLP-IST/osiris). To be able to contribute to the code you need to [join the OSIRIS project](/consortium). This will give access to the development repository and the OSIRIS developer community.
