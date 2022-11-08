@@ -8,8 +8,7 @@ description              : "Fully relativistic, electro-magnetic particle in cel
 baseurl                  : "/"
 repository               : "osiris-code/osiris"
 
-#remote_theme: pages-themes/cayman
-remote_theme: mmistakes/minimal-mistakes@4.24.0
+remote_theme: mmistakes/minimal-mistakes
 
 plugins:
   - jekyll-remote-theme
@@ -22,6 +21,10 @@ atom_feed:
 
 search                   : true
 search_full_content      : true
+search_provider: lunr
+
+lunr:
+  search_within_pages: true
 
 breadcrumbs: true
 
