@@ -30,4 +30,4 @@ sidebar:
 
 ## Reference guide
 
-* _Reference guide_ - OSIRIS reference guide (coming soon)
+* [Reference guide](https://osiris-code.github.io/osiris/) - OSIRIS reference guide
