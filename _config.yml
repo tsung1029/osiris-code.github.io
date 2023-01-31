@@ -6,7 +6,7 @@ description              : "Fully relativistic, electro-magnetic particle in cel
 
 
 baseurl                  : "/"
-repository               : "osiris-code/osiris"
+repository               : "osiris-code/web"
 
 remote_theme: mmistakes/minimal-mistakes
 
