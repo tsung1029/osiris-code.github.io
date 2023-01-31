@@ -60,5 +60,6 @@ docs:
   - title: "Reference"
     children:
       - title: "Reference guide"
-      
+        url: https://osiris-code.github.io/osiris/reference/
+
 
