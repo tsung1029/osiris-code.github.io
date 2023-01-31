@@ -8,13 +8,14 @@ toc_label: Download OSIRIS
 
 ## Latest stable release
 
-The latest stable release is version X.X.X, you can download it from our GitHub repository here:
+The latest stable release is version 1.0.0. You can download the source code from our GitHub repository here:
 
-* __osiris-os.1.0.0.tar.bz2__ Coming soon
+* [osiris-1.0.0.zip](https://github.com/osiris-code/osiris/archive/refs/tags/1.0.0.zip) (4.13 Mb)
+* [osiris-1.0.0.tar.gz](https://github.com/osiris-code/osiris/archive/refs/tags/1.0.0.tar.gz) (3.94 Mb)
 
 ## Older releases
 
-There are no older releases available at this time. The full list of releases will always be available on our [GitHub repository](https://github.com/osiris-code/osiris/).
+There are no older releases available at this time. The full list of releases will always be available on our [GitHub repository](https://github.com/osiris-code/osiris/releases).
 
 ## GitHub repository
 
