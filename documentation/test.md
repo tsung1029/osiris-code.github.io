@@ -1,3 +1,16 @@
+---
+layout: single
+title: Checkpointing
+permalink: /documentation/test
+usemathjax: true
+toc: true
+toc_label: test
+
+sidebar:
+  nav: "docs"
+---
+
+
 This section configures particle species boundary confition setting and must be present in the input file. 
 One of these sections must exist for every species we intend to use. It accepts the following data: * 
 '''type'''(2, x_dim), character(*), default = "---" * 
